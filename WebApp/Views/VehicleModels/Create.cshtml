@@ -1,0 +1,37 @@
+﻿@model WebApp.ViewModels.VehicleModelViewModel
+
+@{
+    ViewData["Title"] = "Create Vehicle Model";
+}
+
+<h2>Create New Vehicle Model</h2>
+
+<form asp-action="Create" asp-controller="VehicleModels" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label number="MakeId" class="control-label">MakeId</label>
+        <input type="number" name="MakeId" id="MakeId" class="form-control" value="@Model.MakeId" required />
+        <span asp-validation-for="MakeId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label name="Name" class="control-label">Name</label>
+        <input name="Name" class="form-control" required />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label name="Abrv" class="control-label">Abrv</label>
+        <input name="Abrv" class="form-control" required />
+        <span asp-validation-for="Abrv" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a href="@Url.Action("Index", "VehicleModels", new { makeId = ViewBag.MakeId })" class="btn btn-secondary">Cancel</a>
+</form>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
