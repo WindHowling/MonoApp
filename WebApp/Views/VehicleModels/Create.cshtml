@@ -10,8 +10,8 @@
     @Html.AntiForgeryToken()
 
     <div class="form-group">
-        <label number="MakeId" class="control-label">MakeId</label>
-        <input type="number" name="MakeId" id="MakeId" class="form-control" value="@Model.MakeId" required />
+        <label for="MakeId" class="control-label">MakeId</label>
+        <input type="text" name="MakeId" id="MakeId" class="form-control" pattern="\d+" title="Please enter a valid number" value="@Model.MakeId" required />
         <span asp-validation-for="MakeId" class="text-danger"></span>
     </div>
 
