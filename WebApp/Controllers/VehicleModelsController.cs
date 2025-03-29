@@ -76,7 +76,6 @@ namespace WebApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(VehicleModelViewModel viewModel)
         {
-            //Validate that the selected MakeId exists
             var makeExists = await _vehicleService.GetMakeByIdAsync(viewModel.MakeId);
             if (makeExists == null)
             {
@@ -94,6 +93,7 @@ namespace WebApp.Controllers
             ViewBag.MakeId = viewModel.MakeId;
             return View(viewModel);
         }
+
 
         // GET: VehicleModels/Edit
         public async Task<IActionResult> Edit(int id, int? makeId)
