@@ -9,8 +9,6 @@ using Project.Service.Pagging;
 using Project.Service.Services.Interface;
 using Project.Service.Helper;
 
-
-
 namespace Project.MVC.Controllers
 {
     public class VehicleMakesController : Controller
@@ -29,8 +27,9 @@ namespace Project.MVC.Controllers
         {
             int pageSize = 5;
 
+            ViewData["Title"] = "Pregled marki vozila";
             ViewData["CurrentSort"] = sortOrder;
-            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["NameSortParm"] = string.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewData["AbrvSortParm"] = sortOrder == "abrv" ? "abrv_desc" : "abrv";
             ViewData["CurrentFilter"] = searchString;
 
@@ -46,10 +45,10 @@ namespace Project.MVC.Controllers
             return View(viewModels);
         }
 
-
         // GET: VehicleMakes/Create
         public IActionResult Create()
         {
+            ViewData["Title"] = "Dodaj marku vozila";
             return View(new VehicleMakeViewModel());
         }
 
@@ -70,9 +69,9 @@ namespace Project.MVC.Controllers
                 return View(viewModel);
             }
 
+            TempData["Success"] = "Marka vozila uspešno dodana.";
             return RedirectToAction(nameof(Index));
         }
-
 
         // GET: VehicleMakes/Edit
         public async Task<IActionResult> Edit(int id)
@@ -81,6 +80,7 @@ namespace Project.MVC.Controllers
             if (make == null)
                 return NotFound();
 
+            ViewData["Title"] = "Izmeni marku vozila";
             var viewModel = _mapper.Map<VehicleMakeViewModel>(make);
             return View(viewModel);
         }
@@ -105,6 +105,7 @@ namespace Project.MVC.Controllers
                 return View(viewModel);
             }
 
+            TempData["Success"] = "Marka vozila uspešno izmenjena.";
             return RedirectToAction(nameof(Index));
         }
 
@@ -115,9 +116,11 @@ namespace Project.MVC.Controllers
             if (make == null)
                 return NotFound();
 
+            ViewData["Title"] = "Obriši marku vozila";
             var viewModel = _mapper.Map<VehicleMakeViewModel>(make);
             return View(viewModel);
         }
+
         // POST: VehicleMakes/Delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -128,10 +131,11 @@ namespace Project.MVC.Controllers
             if (!result.IsSuccess)
             {
                 TempData["Error"] = result.Message;
+                return RedirectToAction(nameof(Delete), new { id });
             }
 
+            TempData["Success"] = "Marka vozila uspešno obrisana.";
             return RedirectToAction(nameof(Index));
         }
-
     }
 }

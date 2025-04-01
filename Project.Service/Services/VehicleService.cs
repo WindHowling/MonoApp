@@ -18,9 +18,10 @@ namespace Project.Service.Services
         }
 
         // ---------- MAKES ----------
-        public async Task<IEnumerable<VehicleMake>> GetAllMakesAsync()
+        public async Task<PaginatedList<VehicleMake>> GetAllMakesAsync(int pageNumber = 1, int pageSize = 10)
         {
-            return await _repository.GetAllMakesAsync();
+            var query = _repository.QueryMakes();
+            return await PaginatedList<VehicleMake>.CreateAsync(query, pageNumber, pageSize);
         }
 
         public async Task<VehicleMake?> GetMakeByIdAsync(int id)
@@ -74,9 +75,10 @@ namespace Project.Service.Services
             await _repository.DeleteModelAsync(id);
         }
 
-        public async Task<List<VehicleMake>> GetAllModelsAsync()
+        public async Task<PaginatedList<VehicleModel>> GetAllModelsAsync(int pageNumber = 1, int pageSize = 10)
         {
-            return await _repository.GetAllMakesAsync() as List<VehicleMake>;
+            var query = _repository.QueryModels();
+            return await PaginatedList<VehicleModel>.CreateAsync(query, pageNumber, pageSize);
         }
         public async Task<PaginatedList<VehicleMake>> GetAllMakesPagedAsync(int pageNumber, int pageSize)
         {

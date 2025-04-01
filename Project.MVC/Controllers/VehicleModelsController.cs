@@ -47,7 +47,7 @@ namespace Project.MVC.Controllers
         public async Task<IActionResult> Create(int makeId)
         {
             ViewBag.MakeId = makeId;
-            ViewBag.VehicleMakes = await _vehicleService.GetAllMakesPagedAsync(1, 100);
+            ViewBag.VehicleMakes = (await _vehicleService.GetAllMakesAsync(1, 100)).ToList();
             return View(new VehicleModelViewModel { MakeId = makeId });
         }
 
@@ -57,7 +57,7 @@ namespace Project.MVC.Controllers
         {
             if (!ModelState.IsValid)
             {
-                ViewBag.VehicleMakes = await _vehicleService.GetAllMakesPagedAsync(1, 100);
+                ViewBag.VehicleMakes = (await _vehicleService.GetAllMakesAsync(1, 100)).ToList();
                 return View(viewModel);
             }
 
@@ -65,7 +65,7 @@ namespace Project.MVC.Controllers
             if (makeExists == null)
             {
                 ModelState.AddModelError("MakeId", "Odabrani proizvođač vozila ne postoji.");
-                ViewBag.VehicleMakes = await _vehicleService.GetAllMakesPagedAsync(1, 100);
+                ViewBag.VehicleMakes = (await _vehicleService.GetAllMakesAsync(1, 100)).ToList();
                 return View(viewModel);
             }
 
@@ -75,7 +75,7 @@ namespace Project.MVC.Controllers
             if (!result.IsSuccess)
             {
                 ModelState.AddModelError(string.Empty, result.Message);
-                ViewBag.VehicleMakes = await _vehicleService.GetAllMakesPagedAsync(1, 100);
+                ViewBag.VehicleMakes = (await _vehicleService.GetAllMakesAsync(1, 100)).ToList();
                 return View(viewModel);
             }
 
@@ -88,7 +88,7 @@ namespace Project.MVC.Controllers
             if (model == null)
                 return NotFound();
 
-            ViewBag.VehicleMakes = await _vehicleService.GetAllMakesPagedAsync(1, 100);
+            ViewBag.VehicleMakes = (await _vehicleService.GetAllMakesAsync(1, 100)).ToList();
             ViewBag.MakeId = makeId ?? model.MakeId;
 
             var viewModel = _mapper.Map<VehicleModelViewModel>(model);
@@ -104,7 +104,7 @@ namespace Project.MVC.Controllers
 
             if (!ModelState.IsValid)
             {
-                ViewBag.VehicleMakes = await _vehicleService.GetAllMakesPagedAsync(1, 100);
+                ViewBag.VehicleMakes = (await _vehicleService.GetAllMakesAsync(1, 100)).ToList();
                 return View(viewModel);
             }
 
@@ -114,7 +114,7 @@ namespace Project.MVC.Controllers
             if (!result.IsSuccess)
             {
                 ModelState.AddModelError("", result.Message);
-                ViewBag.VehicleMakes = await _vehicleService.GetAllMakesPagedAsync(1, 100);
+                ViewBag.VehicleMakes = (await _vehicleService.GetAllMakesAsync(1, 100)).ToList();
                 return View(viewModel);
             }
 

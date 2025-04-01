@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "E:\\WebApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|e:\\webapp\\project.service\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|solutionrelative:project.service\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|e:\\webapp\\project.mvc\\controllers\\vehiclemodelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\controllers\\vehiclemodelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|e:\\webapp\\project.mvc\\controllers\\vehiclemakescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\controllers\\vehiclemakescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|e:\\webapp\\project.service\\services\\interface\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|solutionrelative:project.service\\services\\interface\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|e:\\webapp\\project.service\\services\\interface\\ivehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|solutionrelative:project.service\\services\\interface\\ivehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|e:\\webapp\\project.service\\pagging\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|solutionrelative:project.service\\pagging\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|e:\\webapp\\project.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|e:\\webapp\\project.mvc\\mapping\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\mapping\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|e:\\webapp\\project.mvc\\views\\vehiclemakes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\views\\vehiclemakes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,18 +55,6 @@
       "RelativeMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\viewmodels\\vehiclemakeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|e:\\webapp\\project.mvc\\mapping\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\mapping\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|e:\\webapp\\project.mvc\\controllers\\vehiclemodelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\controllers\\vehiclemodelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|e:\\webapp\\project.mvc\\controllers\\vehiclemakescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\controllers\\vehiclemakescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|e:\\webapp\\project.mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -49,14 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|e:\\webapp\\project.mvc\\views\\vehiclemakes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\views\\vehiclemakes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|e:\\webapp\\project.service\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|solutionrelative:project.service\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|e:\\webapp\\project.service\\services\\interface\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|solutionrelative:project.service\\services\\interface\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|e:\\webapp\\project.service\\models\\vehiclemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,14 +103,6 @@
       "RelativeMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|solutionrelative:project.service\\project.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|e:\\webapp\\project.service\\pagging\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|solutionrelative:project.service\\pagging\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|e:\\webapp\\project.service\\services\\interface\\ivehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|solutionrelative:project.service\\services\\interface\\ivehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|e:\\webapp\\project.service\\database\\vehicledbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|solutionrelative:project.service\\database\\vehicledbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -109,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|e:\\webapp\\project.service\\database\\vehicledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|solutionrelative:project.service\\database\\vehicledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|e:\\webapp\\project.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF960C09-7BD8-4E71-AF9F-9BCF76012722}|Project.MVC\\Project.MVC.csproj|solutionrelative:project.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{666296DA-83CB-47C7-9FA8-2B1C6B52F1B7}|Project.Service\\Project.Service.csproj|e:\\webapp\\project.service\\services\\vehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -130,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 239,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -145,73 +145,38 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "VehicleMakeViewModel.cs",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\ViewModels\\VehicleMakeViewModel.cs",
-              "RelativeDocumentMoniker": "Project.MVC\\ViewModels\\VehicleMakeViewModel.cs",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\ViewModels\\VehicleMakeViewModel.cs",
-              "RelativeToolTip": "Project.MVC\\ViewModels\\VehicleMakeViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Title": "IVehicleRepository.cs",
+              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Services\\Interface\\IVehicleRepository.cs",
+              "RelativeDocumentMoniker": "Project.Service\\Services\\Interface\\IVehicleRepository.cs",
+              "ToolTip": "E:\\WebApp\\Project.Service\\Services\\Interface\\IVehicleRepository.cs",
+              "RelativeToolTip": "Project.Service\\Services\\Interface\\IVehicleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T12:16:16.717Z",
+              "WhenOpened": "2025-03-31T12:09:33.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "VehicleModelViewModel.cs",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\ViewModels\\VehicleModelViewModel.cs",
-              "RelativeDocumentMoniker": "Project.MVC\\ViewModels\\VehicleModelViewModel.cs",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\ViewModels\\VehicleModelViewModel.cs",
-              "RelativeToolTip": "Project.MVC\\ViewModels\\VehicleModelViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Title": "IVehicleService.cs",
+              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Services\\Interface\\IVehicleService.cs",
+              "RelativeDocumentMoniker": "Project.Service\\Services\\Interface\\IVehicleService.cs",
+              "ToolTip": "E:\\WebApp\\Project.Service\\Services\\Interface\\IVehicleService.cs",
+              "RelativeToolTip": "Project.Service\\Services\\Interface\\IVehicleService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA8wB8AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T12:16:24.929Z",
+              "WhenOpened": "2025-03-31T12:09:35.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Create.cshtml",
-              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleMakes\\Create.cshtml",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Create.cshtml",
-              "RelativeToolTip": "Project.MVC\\Views\\VehicleMakes\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T12:16:31.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleMakes\\Delete.cshtml",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Delete.cshtml",
-              "RelativeToolTip": "Project.MVC\\Views\\VehicleMakes\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T16:04:55.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleMakes\\Edit.cshtml",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Edit.cshtml",
-              "RelativeToolTip": "Project.MVC\\Views\\VehicleMakes\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T16:06:19.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Mapping.cs",
               "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Mapping\\Mapping.cs",
               "RelativeDocumentMoniker": "Project.MVC\\Mapping\\Mapping.cs",
@@ -224,98 +189,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "VehicleModelsController.cs",
               "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Controllers\\VehicleModelsController.cs",
               "RelativeDocumentMoniker": "Project.MVC\\Controllers\\VehicleModelsController.cs",
               "ToolTip": "E:\\WebApp\\Project.MVC\\Controllers\\VehicleModelsController.cs",
               "RelativeToolTip": "Project.MVC\\Controllers\\VehicleModelsController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAYwHMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T12:16:06.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "VehicleMakesController.cs",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Controllers\\VehicleMakesController.cs",
-              "RelativeDocumentMoniker": "Project.MVC\\Controllers\\VehicleMakesController.cs",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\Controllers\\VehicleMakesController.cs",
-              "RelativeToolTip": "Project.MVC\\Controllers\\VehicleMakesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T12:04:18.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Project.MVC\\Properties\\launchSettings.json",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Project.MVC\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T11:47:01.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Project.MVC",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Project.MVC.csproj",
-              "RelativeDocumentMoniker": "Project.MVC\\Project.MVC.csproj",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\Project.MVC.csproj",
-              "RelativeToolTip": "Project.MVC\\Project.MVC.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-31T18:59:15.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IVehicleService.cs",
-              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Services\\Interface\\IVehicleService.cs",
-              "RelativeDocumentMoniker": "Project.Service\\Services\\Interface\\IVehicleService.cs",
-              "ToolTip": "E:\\WebApp\\Project.Service\\Services\\Interface\\IVehicleService.cs",
-              "RelativeToolTip": "Project.Service\\Services\\Interface\\IVehicleService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCIAAACEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T12:09:35.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "VehicleService.cs",
               "DocumentMoniker": "E:\\WebApp\\Project.Service\\Services\\VehicleService.cs",
               "RelativeDocumentMoniker": "Project.Service\\Services\\VehicleService.cs",
               "ToolTip": "E:\\WebApp\\Project.Service\\Services\\VehicleService.cs",
               "RelativeToolTip": "Project.Service\\Services\\VehicleService.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAqwDMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T11:40:00.95Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VehicleMake.cs",
-              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Models\\VehicleMake.cs",
-              "RelativeDocumentMoniker": "Project.Service\\Models\\VehicleMake.cs",
-              "ToolTip": "E:\\WebApp\\Project.Service\\Models\\VehicleMake.cs",
-              "RelativeToolTip": "Project.Service\\Models\\VehicleMake.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T12:09:17.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",
@@ -331,189 +227,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleMakes\\Index.cshtml",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Index.cshtml",
-              "RelativeToolTip": "Project.MVC\\Views\\VehicleMakes\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T16:06:25.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "VehicleModel.cs",
-              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Models\\VehicleModel.cs",
-              "RelativeDocumentMoniker": "Project.Service\\Models\\VehicleModel.cs",
-              "ToolTip": "E:\\WebApp\\Project.Service\\Models\\VehicleModel.cs",
-              "RelativeToolTip": "Project.Service\\Models\\VehicleModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "VehicleMakesController.cs",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Controllers\\VehicleMakesController.cs",
+              "RelativeDocumentMoniker": "Project.MVC\\Controllers\\VehicleMakesController.cs",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\Controllers\\VehicleMakesController.cs",
+              "RelativeToolTip": "Project.MVC\\Controllers\\VehicleMakesController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAIwGAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T12:09:19.724Z",
+              "WhenOpened": "2025-03-31T12:04:18.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Project.MVC\\Views\\_ViewImports.cshtml",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Project.MVC\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T18:23:59.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 8,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleModels\\Edit.cshtml",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Edit.cshtml",
-              "RelativeToolTip": "Project.MVC\\Views\\VehicleModels\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABmAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleMakes\\Edit.cshtml",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Edit.cshtml",
+              "RelativeToolTip": "Project.MVC\\Views\\VehicleMakes\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T16:05:12.044Z",
+              "WhenOpened": "2025-03-31T16:06:19.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleModels\\Delete.cshtml",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Delete.cshtml",
-              "RelativeToolTip": "Project.MVC\\Views\\VehicleModels\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T16:06:07.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Index.cshtml",
-              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleModels\\Index.cshtml",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Index.cshtml",
-              "RelativeToolTip": "Project.MVC\\Views\\VehicleModels\\Index.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T16:05:22.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Create.cshtml",
-              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleModels\\Create.cshtml",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Create.cshtml",
-              "RelativeToolTip": "Project.MVC\\Views\\VehicleModels\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T16:02:21.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "PaginatedList.cs",
-              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Pagging\\PaginatedList.cs",
-              "RelativeDocumentMoniker": "Project.Service\\Pagging\\PaginatedList.cs",
-              "ToolTip": "E:\\WebApp\\Project.Service\\Pagging\\PaginatedList.cs",
-              "RelativeToolTip": "Project.Service\\Pagging\\PaginatedList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T12:09:23.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Project.Service",
-              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Project.Service.csproj",
-              "RelativeDocumentMoniker": "Project.Service\\Project.Service.csproj",
-              "ToolTip": "E:\\WebApp\\Project.Service\\Project.Service.csproj",
-              "RelativeToolTip": "Project.Service\\Project.Service.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-31T11:39:26.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ActionStatus.cs",
-              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Helper\\ActionStatus.cs",
-              "RelativeDocumentMoniker": "Project.Service\\Helper\\ActionStatus.cs",
-              "ToolTip": "E:\\WebApp\\Project.Service\\Helper\\ActionStatus.cs",
-              "RelativeToolTip": "Project.Service\\Helper\\ActionStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:43:59.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IVehicleRepository.cs",
-              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Services\\Interface\\IVehicleRepository.cs",
-              "RelativeDocumentMoniker": "Project.Service\\Services\\Interface\\IVehicleRepository.cs",
-              "ToolTip": "E:\\WebApp\\Project.Service\\Services\\Interface\\IVehicleRepository.cs",
-              "RelativeToolTip": "Project.Service\\Services\\Interface\\IVehicleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T12:09:33.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "VehicleDbContext.cs",
-              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Database\\VehicleDbContext.cs",
-              "RelativeDocumentMoniker": "Project.Service\\Database\\VehicleDbContext.cs",
-              "ToolTip": "E:\\WebApp\\Project.Service\\Database\\VehicleDbContext.cs",
-              "RelativeToolTip": "Project.Service\\Database\\VehicleDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T12:05:23.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\appsettings.json",
-              "RelativeDocumentMoniker": "Project.MVC\\appsettings.json",
-              "ToolTip": "E:\\WebApp\\Project.MVC\\appsettings.json",
-              "RelativeToolTip": "Project.MVC\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T11:51:58.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "VehicleDbContextFactory.cs",
-              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Database\\VehicleDbContextFactory.cs",
-              "RelativeDocumentMoniker": "Project.Service\\Database\\VehicleDbContextFactory.cs",
-              "ToolTip": "E:\\WebApp\\Project.Service\\Database\\VehicleDbContextFactory.cs",
-              "RelativeToolTip": "Project.Service\\Database\\VehicleDbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:51:22.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Program.cs",
               "RelativeDocumentMoniker": "Project.MVC\\Program.cs",
@@ -526,6 +266,247 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PaginatedList.cs",
+              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Pagging\\PaginatedList.cs",
+              "RelativeDocumentMoniker": "Project.Service\\Pagging\\PaginatedList.cs",
+              "ToolTip": "E:\\WebApp\\Project.Service\\Pagging\\PaginatedList.cs",
+              "RelativeToolTip": "Project.Service\\Pagging\\PaginatedList.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T12:09:23.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleMakes\\Delete.cshtml",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Delete.cshtml",
+              "RelativeToolTip": "Project.MVC\\Views\\VehicleMakes\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T16:04:55.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Create.cshtml",
+              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleMakes\\Create.cshtml",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Create.cshtml",
+              "RelativeToolTip": "Project.MVC\\Views\\VehicleMakes\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T12:16:31.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VehicleModelViewModel.cs",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\ViewModels\\VehicleModelViewModel.cs",
+              "RelativeDocumentMoniker": "Project.MVC\\ViewModels\\VehicleModelViewModel.cs",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\ViewModels\\VehicleModelViewModel.cs",
+              "RelativeToolTip": "Project.MVC\\ViewModels\\VehicleModelViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T12:16:24.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "VehicleMakeViewModel.cs",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\ViewModels\\VehicleMakeViewModel.cs",
+              "RelativeDocumentMoniker": "Project.MVC\\ViewModels\\VehicleMakeViewModel.cs",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\ViewModels\\VehicleMakeViewModel.cs",
+              "RelativeToolTip": "Project.MVC\\ViewModels\\VehicleMakeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T12:16:16.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Project.MVC\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Project.MVC\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-31T11:47:01.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Project.MVC.csproj",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Project.MVC.csproj",
+              "RelativeDocumentMoniker": "Project.MVC\\Project.MVC.csproj",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\Project.MVC.csproj",
+              "RelativeToolTip": "Project.MVC\\Project.MVC.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-31T18:59:15.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "VehicleMake.cs",
+              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Models\\VehicleMake.cs",
+              "RelativeDocumentMoniker": "Project.Service\\Models\\VehicleMake.cs",
+              "ToolTip": "E:\\WebApp\\Project.Service\\Models\\VehicleMake.cs",
+              "RelativeToolTip": "Project.Service\\Models\\VehicleMake.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T12:09:17.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleMakes\\Index.cshtml",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleMakes\\Index.cshtml",
+              "RelativeToolTip": "Project.MVC\\Views\\VehicleMakes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T16:06:25.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "VehicleModel.cs",
+              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Models\\VehicleModel.cs",
+              "RelativeDocumentMoniker": "Project.Service\\Models\\VehicleModel.cs",
+              "ToolTip": "E:\\WebApp\\Project.Service\\Models\\VehicleModel.cs",
+              "RelativeToolTip": "Project.Service\\Models\\VehicleModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T12:09:19.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Project.MVC\\Views\\_ViewImports.cshtml",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Project.MVC\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T18:23:59.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleModels\\Edit.cshtml",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Edit.cshtml",
+              "RelativeToolTip": "Project.MVC\\Views\\VehicleModels\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T16:05:12.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleModels\\Delete.cshtml",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Delete.cshtml",
+              "RelativeToolTip": "Project.MVC\\Views\\VehicleModels\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T16:06:07.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Index.cshtml",
+              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleModels\\Index.cshtml",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Index.cshtml",
+              "RelativeToolTip": "Project.MVC\\Views\\VehicleModels\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T16:05:22.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Create.cshtml",
+              "RelativeDocumentMoniker": "Project.MVC\\Views\\VehicleModels\\Create.cshtml",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\Views\\VehicleModels\\Create.cshtml",
+              "RelativeToolTip": "Project.MVC\\Views\\VehicleModels\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T16:02:21.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Project.Service.csproj",
+              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Project.Service.csproj",
+              "RelativeDocumentMoniker": "Project.Service\\Project.Service.csproj",
+              "ToolTip": "E:\\WebApp\\Project.Service\\Project.Service.csproj",
+              "RelativeToolTip": "Project.Service\\Project.Service.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-31T11:39:26.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ActionStatus.cs",
+              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Helper\\ActionStatus.cs",
+              "RelativeDocumentMoniker": "Project.Service\\Helper\\ActionStatus.cs",
+              "ToolTip": "E:\\WebApp\\Project.Service\\Helper\\ActionStatus.cs",
+              "RelativeToolTip": "Project.Service\\Helper\\ActionStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T17:43:59.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "VehicleDbContext.cs",
+              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Database\\VehicleDbContext.cs",
+              "RelativeDocumentMoniker": "Project.Service\\Database\\VehicleDbContext.cs",
+              "ToolTip": "E:\\WebApp\\Project.Service\\Database\\VehicleDbContext.cs",
+              "RelativeToolTip": "Project.Service\\Database\\VehicleDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T12:05:23.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\WebApp\\Project.MVC\\appsettings.json",
+              "RelativeDocumentMoniker": "Project.MVC\\appsettings.json",
+              "ToolTip": "E:\\WebApp\\Project.MVC\\appsettings.json",
+              "RelativeToolTip": "Project.MVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-31T11:51:58.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "VehicleDbContextFactory.cs",
+              "DocumentMoniker": "E:\\WebApp\\Project.Service\\Database\\VehicleDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Project.Service\\Database\\VehicleDbContextFactory.cs",
+              "ToolTip": "E:\\WebApp\\Project.Service\\Database\\VehicleDbContextFactory.cs",
+              "RelativeToolTip": "Project.Service\\Database\\VehicleDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T16:51:22.158Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 28,
               "Title": "VehicleRepository.cs",
               "DocumentMoniker": "E:\\WebApp\\Project.Service\\Services\\VehicleRepository.cs",
@@ -534,8 +515,7 @@
               "RelativeToolTip": "Project.Service\\Services\\VehicleRepository.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAIwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T11:40:00.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T11:40:00.296Z"
             },
             {
               "$type": "Document",
@@ -546,8 +526,7 @@
               "ToolTip": "E:\\WebApp\\Project.MVC\\Project.MVC.csproj",
               "RelativeToolTip": "Project.MVC\\Project.MVC.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-31T11:46:50.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T11:46:50.763Z"
             }
           ]
         }
