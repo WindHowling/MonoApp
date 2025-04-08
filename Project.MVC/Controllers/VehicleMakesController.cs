@@ -1,13 +1,11 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Project.Service.Models;
 using Project.MVC.ViewModels;
 using Project.Service.Pagging;
 using Project.Service.Services.Interface;
-using Project.Service.Helper;
 
 namespace Project.MVC.Controllers
 {
@@ -22,7 +20,7 @@ namespace Project.MVC.Controllers
             _mapper = mapper;
         }
 
-        // GET: VehicleMakes/Index
+        // GET: VehicleMakes
         public async Task<IActionResult> Index(string sortOrder, string searchString, int pageNumber = 1)
         {
             int pageSize = 5;
@@ -69,7 +67,7 @@ namespace Project.MVC.Controllers
                 return View(viewModel);
             }
 
-            TempData["Success"] = "Marka vozila uspešno dodana.";
+            TempData["Success"] = "Marka vozila uspješno dodana.";
             return RedirectToAction(nameof(Index));
         }
 
@@ -78,12 +76,16 @@ namespace Project.MVC.Controllers
         {
             var make = await _vehicleService.GetMakeByIdAsync(id);
             if (make == null)
-                return NotFound();
+            {
+                TempData["Error"] = "Marka vozila nije pronađena.";
+                return RedirectToAction(nameof(Index));
+            }
 
-            ViewData["Title"] = "Izmeni marku vozila";
+            ViewData["Title"] = "Izmjeni marku vozila";
             var viewModel = _mapper.Map<VehicleMakeViewModel>(make);
             return View(viewModel);
         }
+
 
         // POST: VehicleMakes/Edit
         [HttpPost]
@@ -91,7 +93,10 @@ namespace Project.MVC.Controllers
         public async Task<IActionResult> Edit(int id, VehicleMakeViewModel viewModel)
         {
             if (id != viewModel.Id)
-                return BadRequest();
+            {
+                TempData["Error"] = "Neispravan ID marke.";
+                return RedirectToAction(nameof(Index));
+            }
 
             if (!ModelState.IsValid)
                 return View(viewModel);
@@ -105,37 +110,50 @@ namespace Project.MVC.Controllers
                 return View(viewModel);
             }
 
-            TempData["Success"] = "Marka vozila uspešno izmenjena.";
+            TempData["Success"] = "Marka vozila uspješno izmenjena.";
             return RedirectToAction(nameof(Index));
         }
+
 
         // GET: VehicleMakes/Delete
         public async Task<IActionResult> Delete(int id)
         {
             var make = await _vehicleService.GetMakeByIdAsync(id);
             if (make == null)
-                return NotFound();
+            {
+                TempData["Error"] = "Marka vozila nije pronađena.";
+                return RedirectToAction(nameof(Index));
+            }
 
             ViewData["Title"] = "Obriši marku vozila";
             var viewModel = _mapper.Map<VehicleMakeViewModel>(make);
             return View(viewModel);
         }
 
+
         // POST: VehicleMakes/Delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            var make = await _vehicleService.GetMakeByIdAsync(id);
+            if (make == null)
+            {
+                TempData["Error"] = "Marka koju pokušavate obrisati ne postoji.";
+                return RedirectToAction(nameof(Index));
+            }
+
             var result = await _vehicleService.TryDeleteMakeAsync(id);
 
             if (!result.IsSuccess)
             {
                 TempData["Error"] = result.Message;
-                return RedirectToAction(nameof(Delete), new { id });
+                return RedirectToAction(nameof(Index));
             }
 
             TempData["Success"] = "Marka vozila uspešno obrisana.";
             return RedirectToAction(nameof(Index));
         }
+
     }
 }

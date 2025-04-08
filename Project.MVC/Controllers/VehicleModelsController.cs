@@ -6,7 +6,6 @@ using Project.Service.Models;
 using Project.MVC.ViewModels;
 using Project.Service.Pagging;
 using Project.Service.Services.Interface;
-using Project.Service.Helper; 
 
 namespace Project.MVC.Controllers
 {
@@ -43,7 +42,6 @@ namespace Project.MVC.Controllers
             return View(viewModels);
         }
 
-
         public async Task<IActionResult> Create(int makeId)
         {
             ViewBag.MakeId = makeId;
@@ -79,14 +77,18 @@ namespace Project.MVC.Controllers
                 return View(viewModel);
             }
 
-            return RedirectToAction("Index", new { makeId = viewModel.MakeId });
+            TempData["Success"] = "Model vozila uspješno dodat.";
+            return RedirectToAction(nameof(Index), new { makeId = viewModel.MakeId });
         }
 
         public async Task<IActionResult> Edit(int id, int? makeId)
         {
             var model = await _vehicleService.GetModelByIdAsync(id);
             if (model == null)
-                return NotFound();
+            {
+                TempData["Error"] = "Model nije pronađen.";
+                return RedirectToAction(nameof(Index), new { makeId });
+            }
 
             ViewBag.VehicleMakes = (await _vehicleService.GetAllMakesAsync(1, 100)).ToList();
             ViewBag.MakeId = makeId ?? model.MakeId;
@@ -100,7 +102,10 @@ namespace Project.MVC.Controllers
         public async Task<IActionResult> Edit(int id, VehicleModelViewModel viewModel)
         {
             if (id != viewModel.Id)
-                return NotFound();
+            {
+                TempData["Error"] = "Neispravan ID modela.";
+                return RedirectToAction(nameof(Index), new { makeId = viewModel.MakeId });
+            }
 
             if (!ModelState.IsValid)
             {
@@ -118,14 +123,18 @@ namespace Project.MVC.Controllers
                 return View(viewModel);
             }
 
-            return RedirectToAction("Index", new { makeId = model.MakeId });
+            TempData["Success"] = "Model vozila uspješno izmenjen.";
+            return RedirectToAction(nameof(Index), new { makeId = model.MakeId });
         }
 
         public async Task<IActionResult> Delete(int id, int? makeId)
         {
             var model = await _vehicleService.GetModelByIdAsync(id);
             if (model == null)
-                return NotFound();
+            {
+                TempData["Error"] = "Model nije pronađen.";
+                return RedirectToAction(nameof(Index), new { makeId });
+            }
 
             ViewBag.MakeId = makeId ?? model.MakeId;
             var viewModel = _mapper.Map<VehicleModelViewModel>(model);
@@ -138,17 +147,21 @@ namespace Project.MVC.Controllers
         {
             var model = await _vehicleService.GetModelByIdAsync(id);
             if (model == null)
-                return NotFound();
+            {
+                TempData["Error"] = "Model koji pokušavate obrisati ne postoji.";
+                return RedirectToAction(nameof(Index));
+            }
 
             var result = await _vehicleService.TryDeleteModelAsync(id);
 
             if (!result.IsSuccess)
             {
-                ModelState.AddModelError("", result.Message);
-                return View(_mapper.Map<VehicleModelViewModel>(model));
+                TempData["Error"] = result.Message;
+                return RedirectToAction(nameof(Index), new { makeId = model.MakeId });
             }
 
-            return RedirectToAction("Index", new { makeId = model.MakeId });
+            TempData["Success"] = "Model vozila uspješno obrisan.";
+            return RedirectToAction(nameof(Index), new { makeId = model.MakeId });
         }
     }
 }
