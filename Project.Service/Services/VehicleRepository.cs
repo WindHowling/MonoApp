@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Project.Service.Database;
 using Project.Service.Models;
+using Project.Service.Pagging;
 using Project.Service.Services.Interface;
 
 namespace Project.Service.Services
@@ -17,75 +17,97 @@ namespace Project.Service.Services
             _context = context;
         }
 
-        //Makes
-        public IQueryable<VehicleMake> QueryMakes()
-        {
-            return _context.VehicleMakes.AsQueryable();
-        }
+        // Makes
+        public IQueryable<VehicleMake> QueryMakes() => _context.VehicleMakes;
 
-        public async Task<List<VehicleMake>> GetAllMakesAsync()
-        {
-            return await _context.VehicleMakes.ToListAsync();
-        }
+        public async Task<VehicleMake?> GetMakeByIdAsync(int id) =>
+            await _context.VehicleMakes.FindAsync(id);
 
-        public async Task<VehicleMake?> GetMakeByIdAsync(int id)
-        {
-            return await _context.VehicleMakes.FindAsync(id);
-        }
-
-        public async Task AddMakeAsync(VehicleMake make)
+        public async Task<bool> AddMakeAsync(VehicleMake make)
         {
             await _context.VehicleMakes.AddAsync(make);
-            await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task UpdateMakeAsync(VehicleMake make)
+        public async Task<bool> UpdateMakeAsync(VehicleMake make)
         {
             _context.VehicleMakes.Update(make);
-            await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task DeleteMakeAsync(int id)
+        public async Task<bool> DeleteMakeAsync(int id)
         {
-            var make = await _context.VehicleMakes.FindAsync(id);
-            if (make != null)
+            var make = await GetMakeByIdAsync(id);
+            if (make == null) return false;
+
+            _context.VehicleMakes.Remove(make);
+            return await _context.SaveChangesAsync() > 0;
+        }
+
+        public async Task<PaginatedList<VehicleMake>> GetFilteredMakesAsync(string sortOrder, string searchString, int pageNumber, int pageSize)
+        {
+            var query = _context.VehicleMakes.AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+                query = query.Where(m => m.Name.Contains(searchString) || m.Abrv.Contains(searchString));
+
+            query = sortOrder switch
             {
-                _context.VehicleMakes.Remove(make);
-                await _context.SaveChangesAsync();
-            }
+                "name_desc" => query.OrderByDescending(m => m.Name),
+                "abrv" => query.OrderBy(m => m.Abrv),
+                "abrv_desc" => query.OrderByDescending(m => m.Abrv),
+                _ => query.OrderBy(m => m.Name)
+            };
+
+            return await PaginatedList<VehicleMake>.CreateAsync(query, pageNumber, pageSize);
         }
 
-        //Models
-        public IQueryable<VehicleModel> QueryModels()
-        {
-            return _context.VehicleModels.AsQueryable();
-        }
+        // Models
+        public IQueryable<VehicleModel> QueryModels() => _context.VehicleModels;
 
-        public async Task<VehicleModel?> GetModelByIdAsync(int id)
-        {
-            return await _context.VehicleModels.FindAsync(id);
-        }
+        public async Task<VehicleModel?> GetModelByIdAsync(int id) =>
+            await _context.VehicleModels.FindAsync(id);
 
-        public async Task AddModelAsync(VehicleModel model)
+        public async Task<bool> AddModelAsync(VehicleModel model)
         {
             await _context.VehicleModels.AddAsync(model);
-            await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task UpdateModelAsync(VehicleModel model)
+        public async Task<bool> UpdateModelAsync(VehicleModel model)
         {
             _context.VehicleModels.Update(model);
-            await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task DeleteModelAsync(int id)
+        public async Task<bool> DeleteModelAsync(int id)
         {
-            var model = await _context.VehicleModels.FindAsync(id);
-            if (model != null)
+            var model = await GetModelByIdAsync(id);
+            if (model == null) return false;
+
+            _context.VehicleModels.Remove(model);
+            return await _context.SaveChangesAsync() > 0;
+        }
+
+        public async Task<PaginatedList<VehicleModel>> GetFilteredModelsAsync(int? makeId, string sortOrder, string searchString, int pageNumber, int pageSize)
+        {
+            var query = _context.VehicleModels.AsQueryable();
+
+            if (makeId.HasValue)
+                query = query.Where(m => m.MakeId == makeId.Value);
+
+            if (!string.IsNullOrEmpty(searchString))
+                query = query.Where(m => m.Name.Contains(searchString) || m.Abrv.Contains(searchString));
+
+            query = sortOrder switch
             {
-                _context.VehicleModels.Remove(model);
-                await _context.SaveChangesAsync();
-            }
+                "name_desc" => query.OrderByDescending(m => m.Name),
+                "abrv" => query.OrderBy(m => m.Abrv),
+                "abrv_desc" => query.OrderByDescending(m => m.Abrv),
+                _ => query.OrderBy(m => m.Name)
+            };
+
+            return await PaginatedList<VehicleModel>.CreateAsync(query, pageNumber, pageSize);
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Project.Service.Helper;
 using Project.Service.Models;
 using Project.Service.Pagging;
@@ -17,196 +15,74 @@ namespace Project.Service.Services
             _repository = repository;
         }
 
-        // ---------- MAKES ----------
+        // Makes
         public async Task<PaginatedList<VehicleMake>> GetAllMakesAsync(int pageNumber = 1, int pageSize = 10)
         {
-            var query = _repository.QueryMakes();
-            return await PaginatedList<VehicleMake>.CreateAsync(query, pageNumber, pageSize);
+            return await PaginatedList<VehicleMake>.CreateAsync(_repository.QueryMakes(), pageNumber, pageSize);
         }
 
-        public async Task<VehicleMake?> GetMakeByIdAsync(int id)
-        {
-            return await _repository.GetMakeByIdAsync(id);
-        }
-
-        public async Task AddMakeAsync(VehicleMake make)
-        {
-            await _repository.AddMakeAsync(make);
-        }
-
-        public async Task UpdateMakeAsync(VehicleMake make)
-        {
-            await _repository.UpdateMakeAsync(make);
-        }
-
-        public async Task DeleteMakeAsync(int id)
-        {
-            await _repository.DeleteMakeAsync(id);
-        }
-
-        public IQueryable<VehicleMake> GetMakeQuery()
-        {
-            return _repository.QueryMakes();
-        }
-
-        // ---------- MODELS ----------
-        public IQueryable<VehicleModel> GetModelQuery()
-        {
-            return _repository.QueryModels();
-        }
-
-        public async Task<VehicleModel> GetModelByIdAsync(int id)
-        {
-            return await _repository.GetModelByIdAsync(id);
-        }
-
-        public async Task AddModelAsync(VehicleModel model)
-        {
-            await _repository.AddModelAsync(model);
-        }
-
-        public async Task UpdateModelAsync(VehicleModel model)
-        {
-            await _repository.UpdateModelAsync(model);
-        }
-
-        public async Task DeleteModelAsync(int id)
-        {
-            await _repository.DeleteModelAsync(id);
-        }
-
-        public async Task<PaginatedList<VehicleModel>> GetAllModelsAsync(int pageNumber = 1, int pageSize = 10)
-        {
-            var query = _repository.QueryModels();
-            return await PaginatedList<VehicleModel>.CreateAsync(query, pageNumber, pageSize);
-        }
-        public async Task<PaginatedList<VehicleMake>> GetAllMakesPagedAsync(int pageNumber, int pageSize)
-        {
-            var query = _repository.QueryMakes();
-            return await PaginatedList<VehicleMake>.CreateAsync(query, pageNumber, pageSize);
-        }
+        public Task<VehicleMake?> GetMakeByIdAsync(int id) => _repository.GetMakeByIdAsync(id);
 
         public async Task<ActionStatus> TryAddMakeAsync(VehicleMake make)
         {
-            try
-            {
-                await _repository.AddMakeAsync(make);
-                return ActionStatus.Success();
-            }
-            catch (Exception ex)
-            {
-                return ActionStatus.Failure($"Failed to add make: {ex.Message}");
-            }
+            var result = await _repository.AddMakeAsync(make);
+            return result ? ActionStatus.Success() : ActionStatus.Failure("Dodavanje marke nije uspjelo.");
         }
 
         public async Task<ActionStatus> TryUpdateMakeAsync(VehicleMake make)
         {
-            try
-            {
-                await _repository.UpdateMakeAsync(make);
-                return ActionStatus.Success();
-            }
-            catch (Exception ex)
-            {
-                return ActionStatus.Failure($"Failed to update make: {ex.Message}");
-            }
+            var exists = await _repository.GetMakeByIdAsync(make.Id);
+            if (exists == null)
+                return ActionStatus.Failure("Marka ne postoji.");
+
+            var result = await _repository.UpdateMakeAsync(make);
+            return result ? ActionStatus.Success() : ActionStatus.Failure("Ažuriranje marke nije uspjelo.");
         }
 
         public async Task<ActionStatus> TryDeleteMakeAsync(int id)
         {
-            try
-            {
-                await _repository.DeleteMakeAsync(id);
-                return ActionStatus.Success();
-            }
-            catch (Exception ex)
-            {
-                return ActionStatus.Failure($"Failed to delete make: {ex.Message}");
-            }
+            var result = await _repository.DeleteMakeAsync(id);
+            return result ? ActionStatus.Success() : ActionStatus.Failure("Brisanje marke nije uspjelo.");
         }
+
+        public Task<PaginatedList<VehicleMake>> GetFilteredMakesAsync(string sortOrder, string searchString, int pageNumber, int pageSize)
+        {
+            return _repository.GetFilteredMakesAsync(sortOrder, searchString, pageNumber, pageSize);
+        }
+
+        // Models
+        public async Task<PaginatedList<VehicleModel>> GetAllModelsAsync(int pageNumber = 1, int pageSize = 10)
+        {
+            return await PaginatedList<VehicleModel>.CreateAsync(_repository.QueryModels(), pageNumber, pageSize);
+        }
+
+        public Task<VehicleModel?> GetModelByIdAsync(int id) => _repository.GetModelByIdAsync(id);
 
         public async Task<ActionStatus> TryAddModelAsync(VehicleModel model)
         {
-            try
-            {
-                await _repository.AddModelAsync(model);
-                return ActionStatus.Success();
-            }
-            catch (Exception ex)
-            {
-                return ActionStatus.Failure($"Failed to add model: {ex.Message}");
-            }
+            var result = await _repository.AddModelAsync(model);
+            return result ? ActionStatus.Success() : ActionStatus.Failure("Dodavanje modela nije uspjelo.");
         }
 
         public async Task<ActionStatus> TryUpdateModelAsync(VehicleModel model)
         {
-            try
-            {
-                await _repository.UpdateModelAsync(model);
-                return ActionStatus.Success();
-            }
-            catch (Exception ex)
-            {
-                return ActionStatus.Failure($"Failed to update model: {ex.Message}");
-            }
+            var exists = await _repository.GetModelByIdAsync(model.Id);
+            if (exists == null)
+                return ActionStatus.Failure("Model ne postoji.");
+
+            var result = await _repository.UpdateModelAsync(model);
+            return result ? ActionStatus.Success() : ActionStatus.Failure("Ažuriranje modela nije uspjelo.");
         }
 
         public async Task<ActionStatus> TryDeleteModelAsync(int id)
         {
-            try
-            {
-                await _repository.DeleteModelAsync(id);
-                return ActionStatus.Success();
-            }
-            catch (Exception ex)
-            {
-                return ActionStatus.Failure($"Failed to delete model: {ex.Message}");
-            }
+            var result = await _repository.DeleteModelAsync(id);
+            return result ? ActionStatus.Success() : ActionStatus.Failure("Brisanje modela nije uspjelo.");
         }
 
-        public async Task<PaginatedList<VehicleMake>> GetFilteredMakesAsync(string sortOrder, string searchString, int pageNumber, int pageSize)
+        public Task<PaginatedList<VehicleModel>> GetFilteredModelsAsync(int? makeId, string sortOrder, string searchString, int pageNumber, int pageSize)
         {
-            var query = _repository.QueryMakes();
-
-            if (!string.IsNullOrEmpty(searchString))
-            {
-                query = query.Where(m => m.Name.Contains(searchString) || m.Abrv.Contains(searchString));
-            }
-
-            query = sortOrder switch
-            {
-                "name_desc" => query.OrderByDescending(m => m.Name),
-                "abrv" => query.OrderBy(m => m.Abrv),
-                "abrv_desc" => query.OrderByDescending(m => m.Abrv),
-                _ => query.OrderBy(m => m.Name)
-            };
-
-            return await PaginatedList<VehicleMake>.CreateAsync(query, pageNumber, pageSize);
+            return _repository.GetFilteredModelsAsync(makeId, sortOrder, searchString, pageNumber, pageSize);
         }
-
-        public async Task<PaginatedList<VehicleModel>> GetFilteredModelsAsync(int? makeId, string sortOrder, string searchString, int pageNumber, int pageSize)
-        {
-            var query = _repository.QueryModels();
-
-            if (makeId.HasValue)
-                query = query.Where(m => m.MakeId == makeId.Value);
-
-            if (!string.IsNullOrEmpty(searchString))
-                query = query.Where(m => m.Name.Contains(searchString) || m.Abrv.Contains(searchString));
-
-            query = sortOrder switch
-            {
-                "name_desc" => query.OrderByDescending(m => m.Name),
-                "abrv" => query.OrderBy(m => m.Abrv),
-                "abrv_desc" => query.OrderByDescending(m => m.Abrv),
-                _ => query.OrderBy(m => m.Name)
-            };
-
-            return await PaginatedList<VehicleModel>.CreateAsync(query, pageNumber, pageSize);
-        }
-
-
     }
-
 }
-

@@ -81,11 +81,17 @@ namespace Project.MVC.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewData["Title"] = "Izmjeni marku vozila";
-            var viewModel = _mapper.Map<VehicleMakeViewModel>(make);
+            ViewData["Title"] = "Izmijeni marku vozila";
+
+            var viewModel = new VehicleMakeViewModel
+            {
+                Id = make.Id,
+                Name = make.Name,
+                Abrv = make.Abrv
+            };
+
             return View(viewModel);
         }
-
 
         // POST: VehicleMakes/Edit
         [HttpPost]
@@ -101,8 +107,18 @@ namespace Project.MVC.Controllers
             if (!ModelState.IsValid)
                 return View(viewModel);
 
-            var make = _mapper.Map<VehicleMake>(viewModel);
-            var result = await _vehicleService.TryUpdateMakeAsync(make);
+            var existingMake = await _vehicleService.GetMakeByIdAsync(viewModel.Id);
+            if (existingMake == null)
+            {
+                TempData["Error"] = "Marka nije pronađena.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            // Ažuriranje postojećeg entiteta
+            existingMake.Name = viewModel.Name;
+            existingMake.Abrv = viewModel.Abrv;
+
+            var result = await _vehicleService.TryUpdateMakeAsync(existingMake);
 
             if (!result.IsSuccess)
             {
@@ -110,10 +126,9 @@ namespace Project.MVC.Controllers
                 return View(viewModel);
             }
 
-            TempData["Success"] = "Marka vozila uspješno izmenjena.";
+            TempData["Success"] = "Marka vozila uspješno izmijenjena.";
             return RedirectToAction(nameof(Index));
         }
-
 
         // GET: VehicleMakes/Delete
         public async Task<IActionResult> Delete(int id)

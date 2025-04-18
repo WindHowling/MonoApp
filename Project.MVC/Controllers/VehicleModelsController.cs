@@ -93,7 +93,14 @@ namespace Project.MVC.Controllers
             ViewBag.VehicleMakes = (await _vehicleService.GetAllMakesAsync(1, 100)).ToList();
             ViewBag.MakeId = makeId ?? model.MakeId;
 
-            var viewModel = _mapper.Map<VehicleModelViewModel>(model);
+            var viewModel = new VehicleModelViewModel
+            {
+                Id = model.Id,
+                Name = model.Name,
+                Abrv = model.Abrv,
+                MakeId = model.MakeId
+            };
+
             return View(viewModel);
         }
 
@@ -113,8 +120,18 @@ namespace Project.MVC.Controllers
                 return View(viewModel);
             }
 
-            var model = _mapper.Map<VehicleModel>(viewModel);
-            var result = await _vehicleService.TryUpdateModelAsync(model);
+            var existingModel = await _vehicleService.GetModelByIdAsync(viewModel.Id);
+            if (existingModel == null)
+            {
+                TempData["Error"] = "Model nije pronađen.";
+                return RedirectToAction(nameof(Index), new { makeId = viewModel.MakeId });
+            }
+
+            existingModel.Name = viewModel.Name;
+            existingModel.Abrv = viewModel.Abrv;
+            existingModel.MakeId = viewModel.MakeId;
+
+            var result = await _vehicleService.TryUpdateModelAsync(existingModel);
 
             if (!result.IsSuccess)
             {
@@ -124,8 +141,10 @@ namespace Project.MVC.Controllers
             }
 
             TempData["Success"] = "Model vozila uspješno izmenjen.";
-            return RedirectToAction(nameof(Index), new { makeId = model.MakeId });
+            return RedirectToAction(nameof(Index), new { makeId = viewModel.MakeId });
         }
+
+
 
         public async Task<IActionResult> Delete(int id, int? makeId)
         {
