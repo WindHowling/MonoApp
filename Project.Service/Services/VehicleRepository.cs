@@ -5,6 +5,7 @@ using Project.Service.Database;
 using Project.Service.Models;
 using Project.Service.Pagging;
 using Project.Service.Services.Interface;
+using System;
 
 namespace Project.Service.Services
 {
@@ -25,23 +26,44 @@ namespace Project.Service.Services
 
         public async Task<bool> AddMakeAsync(VehicleMake make)
         {
-            await _context.VehicleMakes.AddAsync(make);
-            return await _context.SaveChangesAsync() > 0;
+            try
+            {
+                await _context.VehicleMakes.AddAsync(make);
+                return await _context.SaveChangesAsync() > 0;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public async Task<bool> UpdateMakeAsync(VehicleMake make)
         {
-            _context.VehicleMakes.Update(make);
-            return await _context.SaveChangesAsync() > 0;
+            try
+            {
+                _context.VehicleMakes.Update(make);
+                return await _context.SaveChangesAsync() > 0;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public async Task<bool> DeleteMakeAsync(int id)
         {
-            var make = await GetMakeByIdAsync(id);
-            if (make == null) return false;
+            try
+            {
+                var make = await GetMakeByIdAsync(id);
+                if (make == null) return false;
 
-            _context.VehicleMakes.Remove(make);
-            return await _context.SaveChangesAsync() > 0;
+                _context.VehicleMakes.Remove(make);
+                return await _context.SaveChangesAsync() > 0;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public async Task<PaginatedList<VehicleMake>> GetFilteredMakesAsync(string sortOrder, string searchString, int pageNumber, int pageSize)
@@ -70,23 +92,44 @@ namespace Project.Service.Services
 
         public async Task<bool> AddModelAsync(VehicleModel model)
         {
-            await _context.VehicleModels.AddAsync(model);
-            return await _context.SaveChangesAsync() > 0;
+            try
+            {
+                await _context.VehicleModels.AddAsync(model);
+                return await _context.SaveChangesAsync() > 0;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public async Task<bool> UpdateModelAsync(VehicleModel model)
         {
-            _context.VehicleModels.Update(model);
-            return await _context.SaveChangesAsync() > 0;
+            try
+            {
+                _context.VehicleModels.Update(model);
+                return await _context.SaveChangesAsync() > 0;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public async Task<bool> DeleteModelAsync(int id)
         {
-            var model = await GetModelByIdAsync(id);
-            if (model == null) return false;
+            try
+            {
+                var model = await GetModelByIdAsync(id);
+                if (model == null) return false;
 
-            _context.VehicleModels.Remove(model);
-            return await _context.SaveChangesAsync() > 0;
+                _context.VehicleModels.Remove(model);
+                return await _context.SaveChangesAsync() > 0;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public async Task<PaginatedList<VehicleModel>> GetFilteredModelsAsync(int? makeId, string sortOrder, string searchString, int pageNumber, int pageSize)

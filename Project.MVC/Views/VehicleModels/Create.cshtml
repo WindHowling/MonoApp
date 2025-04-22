@@ -11,7 +11,9 @@
 
     <div class="form-group">
         <label asp-for="MakeId" class="control-label"></label>
-        <input asp-for="MakeId" type="text" class="form-control" />
+        <select asp-for="MakeId" class="form-control" asp-items="@(new SelectList(ViewBag.VehicleMakes, "Id", "Id"))">
+            <option value="">-- Odaberi MakeId --</option>
+        </select>
         <span asp-validation-for="MakeId" class="text-danger"></span>
     </div>
 
